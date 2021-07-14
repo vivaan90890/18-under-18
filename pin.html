@@ -1,0 +1,78 @@
+<html>
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+
+</script>
+<script>
+    function play(){
+     var audio = document.getElementById("audio");
+     audioFour.pause();
+     audioThree.pause();
+     audioTwo.pause();
+     audio.play();
+               }
+    function playTwo(){
+     var audioTwo = document.getElementById("audioTwo");
+     audioFour.pause();
+     audioThree.pause();
+     audioTwo.play();
+     audio.pause();
+               }
+               function playThree(){
+     var audioThree = document.getElementById("audioThree");
+     audioFour.pause();
+     audioThree.play();
+     audioTwo.pause();
+     audio.pause();
+               }
+    function playFour(){
+     var audioFour = document.getElementById("audioFour");
+     audioFour.play();
+     audioThree.pause();
+     audioTwo.pause();
+     audio.pause();
+               }  
+  </script>
+  <center>
+    <div style="background-image: url('my.png.jpg');">
+
+  <h1><b>Songs For Party</b></h3>
+  <br>
+  <h1><b>Have fun<br> the songs are Dynamite and Chicken Wing </b></h4>
+    <br>
+    <br>
+  <input type="button" value="PLAY Dynamite" id="l"   onclick="play()">
+  <input type="button" value="PLAY Chicken Wing" id="p"  onclick="playTwo()">
+  <audio id="audio" src="Dynamite - BTS.mp3" ></audio>
+  <audio id="audioTwo" src="The Chicken Wing Beat (320  kbps).mp3" ></audio>
+  <input type="button" value=" Despacito" id="l"   onclick="playThree()">
+  <input type="button" value="Macarena" id="p"  onclick="playFour()">
+  <audio id="audioThree" src="Luis Fonsi x Daddy Yankee - Despacito - Remix - JAY - (DjVicky.in).mp3" ></audio>
+  <audio id="audioFour" src="Macarena - Original version (320  kbps).mp3" ></audio>
+</head>
+<body class="body_backgorund">
+  
+
+ <br>
+ <br> 
+  <img src="giphy.gif">
+  <br>
+  <br>
+  <button onclick="vol()" class="btn btn-danger">Next</button>
+
+
+
+    </div>
+<script src="main.js"></script>
+</body>
+</center>
+</html>
